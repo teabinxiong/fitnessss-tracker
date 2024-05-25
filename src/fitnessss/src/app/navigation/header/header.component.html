@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <div class="sidenav-toggle-container">
+      <button mat-icon-button (click)="onToggleSideNav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div><a routerLink="/">LOGO</a>
+    </div>
+    <div class="toolbar__menugroup">
+      <ul class="navigation-items">
+        @if (isAuth == false) {
+          <li><a routerLink="/signup">Signup</a></li>
+          <li><a routerLink="/login">Login</a></li>
+        } @else {
+          <li><a routerLink="/training">Traning</a></li>
+          <li><a (click)="onLogout()">Logout</a></li>
+        }
+      </ul>
+    </div>
+  </mat-toolbar>

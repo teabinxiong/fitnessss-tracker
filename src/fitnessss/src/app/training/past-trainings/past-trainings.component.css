@@ -1,0 +1,15 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-form-field {
+  width: 60%;
+}
+
+@media screen and (max-width: 599px) {
+    mat-form-field {
+        width: 100%;
+      } 
+}

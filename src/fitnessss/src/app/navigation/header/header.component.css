@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    color: lightgrey;
+}
+
+.toolbar__menugroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navigation-items {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    margin:0;
+    gap: 10px;
+   
+}
+@media (min-width:599.1px) {
+    
+    .sidenav-toggle-container
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .toolbar__menugroup
+    {
+        display: none;
+    }
+}

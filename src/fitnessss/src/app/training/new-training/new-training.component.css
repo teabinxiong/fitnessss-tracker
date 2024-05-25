@@ -1,0 +1,31 @@
+.new-training{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+
+mat-card {
+    width: 600px;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-actions{
+    display: flex;
+    justify-content: center;  
+}
+
+@media screen and (max-width : 599px) {
+    mat-card {
+        width: 100%;
+    }
+}
